@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Alata|Source+Sans+Pro:400,700&display=swap");
+:root {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Alata', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body > header {
+  background: #f7c945;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body > header .logo {
+  margin: auto 0 0 0;
+}
+
+body > header h1 {
+  margin: 1rem 0;
+  font-size: 2.8rem;
+}
+
+body > header p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 40rem;
+  text-align: center;
+  line-height: 150%;
+}
+
+body > header p.free {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+body > header .push-down {
+  margin: auto 0 1rem 0;
+  font-size: 3rem;
+  opacity: 1;
+}
+
+body main {
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  padding: 1rem;
+}
+
+body main h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+body main .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+@media (max-width: 640px) {
+  body main .gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body main .gallery .illustration {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+body main .gallery .illustration img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body main .gallery .illustration:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+body main .gallery .dl-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #222;
+  height: 20rem;
+  grid-column: auto / span 2;
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 1rem 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+body main .gallery .dl-link:hover {
+  background: #333;
+}
+
+body main .gallery .dl-link ion-icon {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+body footer {
+  background: #eee;
+  height: 20rem;
+  color: #222;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer ion-icon {
+  margin: 0 1rem;
+}
+
+body footer ion-icon :hover {
+  color: #111;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
