@@ -160,7 +160,7 @@ body footer ion-icon {
   margin: 0 1rem;
 }
 
-body footer ion-icon :hover {
+body footer ion-icon:hover {
   color: #111;
   cursor: pointer;
 }
