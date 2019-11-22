@@ -151,6 +151,12 @@ body {
 
         &.show {
             display: flex;
+            animation: fade .3s forwards;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: scale(1.2); }
+              to { opacity: 1; transform: scale(1); }
         }
 
         article {
@@ -158,6 +164,7 @@ body {
             background: white;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 0 3rem rgba($color: #000, $alpha: .8);
 
             img {
                 width: 100%;
@@ -166,7 +173,7 @@ body {
             h1 {
                 font-size: 2rem;
                 margin: 0;
-                padding: .5rem 1rem 0 1rem;
+                padding: 2rem 1rem 0 1rem;
             }
 
             p {
@@ -184,6 +191,16 @@ body {
                 font-size: 1.2rem;
                 color: #eee;
                 text-decoration: none;
+
+                &:hover {
+                    background: #000;
+                }
+
+                &:active {
+                    background: #f7c945;
+                    color: #222;
+                }
+
             }
 
         }

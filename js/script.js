@@ -20,6 +20,6 @@ function lightbox(img){
 }
 
 // Close overlay
-document.querySelector('#overlay article').addEventListener('click', () => {
+document.querySelector('#overlay').addEventListener('click', () => {
     document.querySelector('#overlay').classList.toggle('show')
 })
