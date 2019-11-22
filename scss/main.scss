@@ -68,19 +68,18 @@ body {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .illustration {
+            figure {
                 margin: 0;
                 padding: 0;
                 transition: all .2s ease;
 
                 img {
                     width: 100%;
-                    margin: 0;
-                    padding: 0;
                 }
 
                 &:hover {
                     filter: brightness(1.1);
+                    cursor: pointer;
                 }
 
             }
@@ -137,5 +136,56 @@ body {
             }
         }
 
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color: #000, $alpha: .85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+        &.show {
+            display: flex;
+        }
+
+        article {
+            max-width: 300px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin: 0;
+                padding: .5rem 1rem 0 1rem;
+            }
+
+            p {
+                padding: 0 1rem;
+                line-height: 150%;
+                font-size: .9rem;
+            }
+
+            a {
+                padding: 1rem 2rem;
+                text-align: center;
+                margin: 2rem auto;
+                background: #222;
+                border-radius: 999rem;
+                font-size: 1.2rem;
+                color: #eee;
+                text-decoration: none;
+            }
+
+        }
     }
 }

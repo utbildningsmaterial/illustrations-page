@@ -84,22 +84,21 @@ body main .gallery {
   }
 }
 
-body main .gallery .illustration {
+body main .gallery figure {
   margin: 0;
   padding: 0;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-body main .gallery .illustration img {
+body main .gallery figure img {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-body main .gallery .illustration:hover {
+body main .gallery figure:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+  cursor: pointer;
 }
 
 body main .gallery .dl-link {
@@ -163,5 +162,66 @@ body footer ion-icon {
 body footer ion-icon:hover {
   color: #111;
   cursor: pointer;
+}
+
+body #overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+body #overlay.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #overlay article {
+  max-width: 300px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #overlay article img {
+  width: 100%;
+}
+
+body #overlay article h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: .5rem 1rem 0 1rem;
+}
+
+body #overlay article p {
+  padding: 0 1rem;
+  line-height: 150%;
+  font-size: .9rem;
+}
+
+body #overlay article a {
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  background: #222;
+  border-radius: 999rem;
+  font-size: 1.2rem;
+  color: #eee;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
